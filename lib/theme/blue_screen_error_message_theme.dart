@@ -18,12 +18,12 @@ class BlueScreenErrorMessageTheme {
                               textDirection: TextDirection.ltr,
                               children: <Widget>[
                                 Padding(
-                                  padding: EdgeInsets.symmetric(vertical: 32.0,horizontal: 32),
+                                  padding: EdgeInsets.symmetric(vertical: 32.0, horizontal: 32),
                                   child: Text(
                                     "):",
                                     textDirection: TextDirection.ltr,
                                     overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(color: Colors.white, fontSize: 100,fontWeight: FontWeight.bold),
+                                    style: TextStyle(color: Colors.white, fontSize: 100, fontWeight: FontWeight.bold),
                                   ),
                                 ),
                                 Container(
@@ -35,7 +35,7 @@ class BlueScreenErrorMessageTheme {
                                       style: TextStyle(color: Colors.white, fontSize: 18),
                                     )),
                                 Padding(
-                                  padding: EdgeInsets.symmetric(vertical: 8.0,horizontal: 16),
+                                  padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16),
                                   child: Text(
                                     errorMessage.title,
                                     textDirection: TextDirection.ltr,
@@ -52,7 +52,7 @@ class BlueScreenErrorMessageTheme {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.symmetric(vertical: 8.0,horizontal: 16),
+                                  padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16),
                                   child: Text(
                                     errorMessage.info,
                                     textDirection: TextDirection.ltr,

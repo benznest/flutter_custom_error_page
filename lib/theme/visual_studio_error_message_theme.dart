@@ -27,7 +27,7 @@ class VisualStudioErrorMessageTheme {
                                       style: TextStyle(color: Colors.black87, fontSize: 18, fontWeight: FontWeight.bold),
                                     )),
                                 Padding(
-                                  padding: EdgeInsets.symmetric(vertical: 8.0,horizontal: 16),
+                                  padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16),
                                   child: Text(
                                     errorMessage.title,
                                     textDirection: TextDirection.ltr,
@@ -44,7 +44,7 @@ class VisualStudioErrorMessageTheme {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.symmetric(vertical: 8.0,horizontal: 16),
+                                  padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16),
                                   child: Text(
                                     errorMessage.info,
                                     textDirection: TextDirection.ltr,

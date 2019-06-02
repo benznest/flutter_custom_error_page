@@ -29,14 +29,19 @@ class _MyAppState extends State<MyApp> {
     super.initState();
   }
 
+
   @override
   Widget build(BuildContext context) {
 
-    ErrorWidget.builder = ErrorMessageBuilder.build(theme: ErrorTheme.BlueScreen);
+    ErrorWidget.builder = (FlutterErrorDetails errorDetails) {
+      return Container(color:Colors.blue);
+    };
+
+//    ErrorWidget.builder = ErrorMessageBuilder.build(theme: ErrorTheme.Laravel);
 
     return MaterialApp(
       builder: (BuildContext context, Widget widget) {
-        ErrorWidget.builder = ErrorMessageBuilder.build(theme: ErrorTheme.BlueScreen);
+//        ErrorWidget.builder = ErrorMessageBuilder.build(theme: ErrorTheme.BlueScreen);
         return widget;
       },
       home: Scaffold(
@@ -48,7 +53,7 @@ class _MyAppState extends State<MyApp> {
     );
   }
 
-  void onTapp() {
+  void onTap() {
 
   }
 }

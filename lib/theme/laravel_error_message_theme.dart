@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_error_page/error_message.dart';
 
-class LaravelErrorMessageTheme{
+class LaravelErrorMessageTheme {
 
   static Widget build(ErrorMessage errorMessage) {
-
     return Directionality(
         textDirection: TextDirection.ltr,
         child: ListView(scrollDirection: Axis.vertical,
@@ -14,7 +13,7 @@ class LaravelErrorMessageTheme{
                     textDirection: TextDirection.ltr,
                     children: <Widget>[
                       Container(
-                          constraints:  BoxConstraints(minWidth: double.infinity),
+                          constraints: BoxConstraints(minWidth: double.infinity),
                           color: Color(0xff2a2a2a),
                           padding: EdgeInsets.all(24),
                           child: Column(crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,7 +62,6 @@ class LaravelErrorMessageTheme{
   static List<Widget> buildRowStacktraceWidget(ErrorMessage errorMessage) {
     List<Widget> listWidget = List();
     for (RowErrorStacktrace row in errorMessage.stacktrace) {
-
       listWidget.add(Container(padding: EdgeInsets.all(16),
         decoration: BoxDecoration(color: Colors.white),
         margin: EdgeInsets.symmetric(vertical: 4),

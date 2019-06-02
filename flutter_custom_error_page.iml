@@ -12,6 +12,16 @@
       <excludeFolder url="file://$MODULE_DIR$/example/.idea/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/.idea/runConfigurations/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle/4.10.2/fileChanges/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle/4.10.2/fileContent/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle/4.10.2/fileHashes/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle/4.10.2/javaCompile/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle/4.10.2/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle/4.10.2/taskHistory/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle/4.10.2/vcsMetadata-1/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle/buildOutputCleanup/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle/vcs-1/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/app/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/debug/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/main/java/com/benzneststudios/flutter_custom_error_page_example/packages" />
