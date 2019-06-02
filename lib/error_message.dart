@@ -6,8 +6,8 @@ class RowErrorStacktrace {
   String package;
   String line;
 
-  RowErrorStacktrace({this.number = "", this.message = "", this.package = "", this.line = ""});
-
+  RowErrorStacktrace(
+      {this.number = "", this.message = "", this.package = "", this.line = ""});
 }
 
 class ErrorMessage {
@@ -19,8 +19,10 @@ class ErrorMessage {
 
   ErrorMessage(FlutterErrorDetails errorDetails) {
     List<String> listStacktrace = errorDetails.stack.toString().split("\n");
-    title = errorDetails.toString(minLevel: DiagnosticLevel.debug).split("\n")[2];
-    message = errorDetails.toString(minLevel: DiagnosticLevel.info).split("\n")[3];
+    title =
+        errorDetails.toString(minLevel: DiagnosticLevel.debug).split("\n")[2];
+    message =
+        errorDetails.toString(minLevel: DiagnosticLevel.info).split("\n")[3];
     info = errorDetails.toString(minLevel: DiagnosticLevel.info).split("\n")[5];
     exception = errorDetails.toStringShort();
     stacktrace = List();
@@ -29,9 +31,7 @@ class ErrorMessage {
       List<String> msg = stacktrace.split("     ");
       if (msg.length > 1) {
         RowErrorStacktrace stack = RowErrorStacktrace();
-        stack.package = stacktrace
-            .split(" ")
-            .last;
+        stack.package = stacktrace.split(" ").last;
 
         stack.number = msg[0];
         stack.message = msg[1];
