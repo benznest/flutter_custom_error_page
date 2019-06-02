@@ -32,17 +32,16 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
 
-    ErrorWidget.builder = ErrorMessageBuilder.build(theme: ErrorTheme.Laravel);
+    ErrorWidget.builder = ErrorMessageBuilder.build(theme: ErrorTheme.BlueScreen);
 
-     ForceError.test();
     return MaterialApp(
       builder: (BuildContext context, Widget widget) {
-        ErrorWidget.builder = ErrorMessageBuilder.build(theme: ErrorTheme.Laravel);
+        ErrorWidget.builder = ErrorMessageBuilder.build(theme: ErrorTheme.BlueScreen);
         return widget;
       },
       home: Scaffold(
         appBar: AppBar(
-          title: Text(""),
+          title: Text(null),
         ),
         body: Container(),
       ),
